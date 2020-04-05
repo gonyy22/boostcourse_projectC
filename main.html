@@ -4,30 +4,33 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width==device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./css/foodwith.css">
-  <title></title>
+  <title>foodwith</title>
 </head>
 <body>
   <header class="header_wrap">
-    <a href="#" class="logo_link"></a>
-    <a href="#" class="menu_link"><img src="./image/icon_menu.png"></a>
-    <nav>
-      <a href="#">About</a>
-      <a href="#">Work</a>
-      <a href="#">Contact</a>
+    <h1><a href="#" class="logo_link"><span class="blind">foodwith</span></a></h1>
+    <a href="#" class="menu_link"><span class="blind">메뉴</span></a>
+    <nav class="menu_active"> <!--메뉴활성화클래스-->
+      <ul>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Work</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
     </nav>
   </header>
   <main>
     <a href="#" class="intro_link_wrap">
       <div class="intro_wrap">
-        <img src="./image/banner_strawberry.png" alt="" class="banner">
+        <img src="./image/banner_strawberry.png" alt="딸기이미지배너" class="banner">
         <div class="intro_text_wrap">
-          <p class="intro_text">오븐 없이도 베이킹 가능! 달콤 상큼 봄맞이 노오븐 딸기케이크 만들기!</p>
+          <h2 class="intro_text">오븐 없이도 베이킹 가능! 달콤 상큼 봄맞이 노오븐 딸기케이크 만들기!</h2>
         </div>
-          <div class="short_line"></div>
-          <div class="profile_wrap">
-            <img src="./image/thumbnail_profile_none.jpg" alt="" class="profile_img">
+        <div class="profile_wrap">
+          <div class="profile_inner_wrap">
+            <img src="./image/thumbnail_profile.jpg" alt="프로필사진" class="profile_img">
             <span class="profile_name">FULLMOON</span>
           </div>
+        </div>
       </div>
     </a>
     <div class="recipe_wrap">
@@ -36,131 +39,145 @@
           <li>
             <a href="#" class="recipe_link_wrap">
               <div class="thumb_wrap">
-                <img src="./image/thumbnail_pumpkin.jpg" alt="">
+                <img src="./image/thumbnail_pumpkin.jpg" alt="호박">
                 <div class="dimmed">
-                  <p class="recipe_title">따뜻 담백 호박! 든든한
-                  호박죽으로 한끼 해결하기</p>
+                  <div class="inner_dimmed">
+                    <p class="recipe_title">따뜻 담백 호박! 든든한
+                      호박죽으로 한끼 해결하기</p>
+                    </div>
                   </div>
-              </div>
-            </a>
-          </li>
-          <li>
-            <a href="#" class="recipe_link_wrap">
-              <div class="thumb_wrap">
-                <img src="./image/thumbnail_lime.jpg" alt="">
-                <div class="dimmed">
-                  <p class="recipe_title">상큼한 라임청 담기</p>
                 </div>
-            </div>
-            </a>
-          </li>
-          <li>
-            <a href="#" class="recipe_link_wrap">
-              <div class="thumb_wrap">
-                <img src="./image/thumbnail_paprika.jpg" alt="">
-              <div class="dimmed">
-                <p class="recipe_title">아삭아삭 빨간 피망 볶음 레시피</p>
-              </div>
-            </div>
-            </a>
-          </li>
-          <li>
-            <a href="#" class="recipe_link_wrap">
-              <div class="thumb_wrap">
-                <img src="./image/thumbnail_garlic.jpg" alt="">
-              <div class="dimmed">
-                <p class="recipe_title">바삭바삭 마늘빵 만들기</p>
-              </div>
-            </div>
-            </a>
-          </li>
-          <li>
-            <a href="#" class="recipe_link_wrap">
-              <div class="thumb_wrap">
-                <img src="./image/thumbnail_onion.jpg" alt="">
-              <div class="dimmed">
-                <p class="recipe_title">자색 빛깔 적양파 피클 담기</p>
-              </div>
-            </div>
-            </a>
-          </li>
-          <li>
-            <a href="#" class="recipe_link_wrap">
-              <div class="thumb_wrap">
-                <img src="./image/thumbnail_avocado.jpg" alt="">
-              <div class="dimmed">
-                <p class="recipe_title">건강한 아보카도 샌드위치 만들기</p>
-              </div>
-            </div>
-            </a>
-          </li>
-        </ul>
-        <button type="button" name="더보기" class="more_bt">
-          <img src="./image/icon_arrow_more.png" alt="" class="more_bt_img">
-          <span class="text_bt">더보기</span>
-        </button>
-      </div>
-    </div>
-    <div class="form_wrap">
-      <div class="form_inner_wrap">
-        <div class="form_intro_wrap">
-          <p class="form_intro_title">전하고 싶은 말을 남겨주세요.</p>
-          <p class="form_intro_sub">답변을 원하시면 이메일을 꼭 적어주세요.</p>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="recipe_link_wrap">
+                <div class="thumb_wrap">
+                  <img src="./image/thumbnail_lime.jpg" alt="라임">
+                  <div class="dimmed">
+                    <div class="inner_dimmed">
+                      <p class="recipe_title">상큼한 라임청 담기</p>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="recipe_link_wrap">
+                <div class="thumb_wrap">
+                  <img src="./image/thumbnail_paprika.jpg" alt="피망">
+                  <div class="dimmed">
+                    <div class="inner_dimmed">
+                      <p class="recipe_title">아삭아삭 빨간 피망 볶음 레시피</p>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="recipe_link_wrap">
+                <div class="thumb_wrap">
+                  <img src="./image/thumbnail_garlic.jpg" alt="마늘">
+                  <div class="dimmed">
+                    <div class="inner_dimmed">
+                      <p class="recipe_title">바삭바삭 마늘빵 만들기</p>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="recipe_link_wrap">
+                <div class="thumb_wrap">
+                  <img src="./image/thumbnail_onion.jpg" alt="적양파">
+                  <div class="dimmed">
+                    <div class="inner_dimmed">
+                      <p class="recipe_title">자색 빛깔 적양파 피클 담기</p>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="recipe_link_wrap">
+                <div class="thumb_wrap">
+                  <img src="./image/thumbnail_avocado.jpg" alt="아보카도">
+                  <div class="dimmed">
+                    <div class="inner_dimmed">
+                      <p class="recipe_title">건강한 아보카도 샌드위치 만들기</p>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </li>
+          </ul>
+          <button type="button" name="더보기" class="more_bt">
+            <img src="./image/icon_arrow_more.png" alt="" class="more_bt_img">
+            <span class="text_bt">더보기</span>
+          </button>
         </div>
-        <form class="form_shape" action="index.html" method="post">
-          <label for="nickname" class="input_text">닉네임</label><input type="text" id="nickname" name="" value="" placeholder="NICKNAME" class="input_shape_name">
-          <label for="email" class="input_text">이메일</label><input type="text" id="email" name="" value="" placeholder="ID" class="input_shape_email"><span>@</span>
-          <div class="select_form">
-            <select name="">
-              <option value="" selected>선택하세요</option>
-              <option value="">naver.com</option>
-              <option value="">naver.com</option>
-            </select>
+      </div>
+      <div class="form_wrap">
+        <div class="form_inner_wrap">
+          <div class="form_intro_wrap">
+            <h2 class="form_intro_title">전하고 싶은 말을 남겨주세요.</h2>
+            <p class="form_intro_sub">답변을 원하시면 이메일을 꼭 적어주세요.</p>
           </div>
-          <textarea name="name" placeholder="전하고 싶은 말을 100자 이내로 적어주세요." class="textarea_shape"></textarea>
-          <button type="submit" name="button" class="send_bt">전송하기</button>
-        </form>
-        <img src="./image/bg_pencil.png" alt="" class="form_bg_img">
-      </div>
-    </div>
-    <div class="more_info_wrap">
-      <div class="notice_wrap">
-        <div class="division_line">
-          <strong class="notice_title">공지사항</strong>
-          <p class="notice_sub">다양한 소식을 담은 foodwith! 정식 오픈을 안내드립니다.</p>
-          <a href="#" class="notice_more_bt"><span>더보기</span></a>
+          <div class="form_shape">
+            <form action="index.html" method="post">
+              <label for="nickname" class="input_text">닉네임</label><input type="text" id="nickname" placeholder="NICKNAME" class="input_shape_name">
+              <label for="email" class="input_text">이메일</label><input type="text" id="email" placeholder="ID" class="input_shape_email"><span>@</span>
+              <div class="select_form">
+                <label for="emaildomain" class="blind">이메일도메인선택</label>
+                <select id="emaildomain">
+                  <option value="" selected>선택하세요</option>
+                  <option value="">naver.com</option>
+                  <option value="">naver.com</option>
+                </select>
+              </div>
+              <textarea name="name" placeholder="전하고 싶은 말을 100자 이내로 적어주세요." class="textarea_shape"></textarea>
+              <button type="submit" name="button" class="send_bt">전송하기</button>
+            </form>
+          </div>
         </div>
       </div>
-      <div class="food_family">
-        <div class="creators_wrap">
-          <span class="food_family_title">Creators</span>
-          <ul class="food_family_li">
-            <li><a href="#">푸드 크리에이터</a></li>
-            <li><a href="#">푸드 비즈니스</a></li>
+      <div class="more_info_wrap">
+        <div class="notice_wrap">
+          <div class="division_line">
+            <h2 class="notice_title">공지사항</h2>
+            <a href="#" class="notice_sub">다양한 소식을 담은 foodwith! 정식 오픈을 안내드립니다.</a>
+            <a href="#" class="notice_more_bt"><span>더보기</span></a>
+          </div>
+        </div>
+        <div class="food_family">
+          <div class="creators_wrap">
+            <span class="food_family_title">Creators</span>
+            <ul class="food_family_li">
+              <li><a href="#">푸드 크리에이터</a></li>
+              <li><a href="#">푸드 비즈니스</a></li>
+            </ul>
+          </div>
+          <div class="partners_wrap">
+            <span class="food_family_title">Partners</span>
+            <ul class="food_family_li">
+              <li><a href="#">푸드 파트너</a></li>
+              <li><a href="#">푸드 스토어</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="footer_wrap">
+        <div class="footer_inner_wrap">
+          <ul class="footer_li">
+            <li><a href="#">회사소개</a></li>
+            <li><a href="#">인재채용</a></li>
+            <li><a href="#">이용약관</a></li>
+            <li><a href="#">고객센터</a></li>
           </ul>
-        </div>
-        <div class="partners_wrap">
-          <span class="food_family_title">Partners</span>
-          <ul class="food_family_li">
-            <li><a href="#">푸드 파트너</a></li>
-            <li><a href="#">푸드 스토어</a></li>
-          </ul>
+          <p class="copyright">&copy; <span class="logo_em">foodwith</span> All Right Reserved.</p>
         </div>
       </div>
-    </div>
-  </main>
-  <footer>
-    <div class="footer_wrap">
-      <div class="footer_inner_wrap">
-        <ul class="footer_li">
-          <a href="#"><li>회사소개</li></a>
-          <a href="#"><li>인재채용</li></a>
-          <a href="#"><li>이용약관</li></a>
-          <a href="#"><li>고객센터</li></a>
-        </ul>
-        <p class="copyright">&copy; <span class="logo_em">foodwith</span> All Right Reserved.</p>
-      </div>
-    </div>
-  </footer>
-</body>
-</html>
+    </footer>
+  </body>
+  </html>
